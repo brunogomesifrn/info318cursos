@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <style>
+
+
+    *{ margin: 0;padding: 0; }
+    body{ font-family: "trebuchet ms"; }
+    a{ text-decoration: none; color: #000; }
+    a:hover{ }
+
+    #menu1 {
+        width: 1597px;
+        height: 100px;
+        line-height: 80px; /* centraliza na vertical */
+        background-color: #f1f1f1;
+        border: 1px dashed #ccc;
+        margin: 0 auto;
+    }
+    ul.menu{
+        text-align: center; /* centraliza na horizontal */
+    }
+    ul.menu li{
+        display: inline-block; /* centraliza na horizontal */
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    ul.menu li a{
+        background-color: #3d7bb3;
+        border-radius: 6px;
+        padding: 6px 10px;
+        color: #fff;
+    }
+    ul.menu li a:hover{
+        background-color: #8BBADC;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .body {
+        background: black;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .centro {
+        text-align: center;
+    }
+
+    .titulo1 {
+        text-align: center;
+
+    }
+
+    .principal {
+        border-style: solid;
+    }
+</style>
+</head>
+<body>
+
+ <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="img"> <img src="imagens/JuniorJobs1.png" height="250px" width="400px"></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="menuverdade.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemsomos.html">Quem somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cadastro
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
+                          <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="contato.html">Contato</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
+          </form>
+      </div>
+  </nav>
+</div>
+</div>
+
+<form action="" method="">
+    
+<h1 class="titulo1"> Seja bem-vindo a página de cadastro! <br> Aqui você poderá se cadastrar para tornar-se uma empresa parceira do IFRN. </h1>
+</form>
+
+<div class="principal">
+    <br>
+<p> Nome da empresa:
+<input type="text" name="nome" autofocus required>
+</p>
+
+<p>E-mail:
+<input type="email" name="email" required />
+</p>
+
+<p>CNPJ:
+<input type="text" name="cnpj" maxlength="11" required />
+</p>
+
+<p>Telefone:
+<input type="text" name="telefone" required />
+</p>
+
+<p>Endereço:
+<input type="text" name="endereço" required />
+</p>
+
+<p> Deseja ofertar vagas de emprego para que área? <br />
+<input type="checkbox" name="area" value="informatica"/> Informática
+<br />
+<input type="checkbox" name="area" value="eletromecanica" /> Eletromecânica <br />
+<input type="checkbox" name="area" value="eventos" /> Eventos <br />
+<input type="checkbox" name="area" value="mecanica" /> Mecânica <br />
+<input type="checkbox" name="area" value="gestur" /> Gestão de Turismo <br />
+<input type="checkbox" name="area" value="ledoc" /> LEDOC </p>
+
+
+
+<p>
+<input type="submit" value="Enviar dados" />
+</p>
+
+</div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+crossorigin="anonymous"></script>
+</body>
+</html>

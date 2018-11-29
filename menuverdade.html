@@ -5,49 +5,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <style type="text/css">
 
-    <style>
 
-
-    *{ margin: 0;padding: 0; }
     body{ font-family: "trebuchet ms"; }
     a{ text-decoration: none; color: #000; }
     a:hover{ }
 
-    #menu1 {
-        width: 1597px;
-        height: 100px;
-        line-height: 80px; /* centraliza na vertical */
-        background-color: #f1f1f1;
-        border: 1px dashed #ccc;
-        margin: 0 auto;
+    .est{
+        background: rgba(20, 20, 20, 0.7);
+        border-radius: 10px;   
     }
-    ul.menu{
-        text-align: center; /* centraliza na horizontal */
-    }
-    ul.menu li{
-        display: inline-block; /* centraliza na horizontal */
-        margin: 10px;
-        width: 200px;
-        height: 200px;
-    }
-    ul.menu li a{
-        background-color: #3d7bb3;
-        border-radius: 6px;
-        padding: 6px 10px;
-        color: #fff;
-    }
-    ul.menu li a:hover{
-        background-color: #8BBADC;
+    .im{
+        width: 100%;
+        height: 600px;
     }
 
     .img {
         text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black
     }
 
-    .body {
-        background: black;
-    }
 
     .img {
         text-align: center;
@@ -55,6 +34,13 @@
 
     .centro {
         text-align: center;
+        margin: 0 auto;
+        width: 50%
+    }
+    body{
+        background: url('imagens/fundo.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 </style>
 </head>
@@ -62,20 +48,12 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="img"> <img src="imagens/JuniorJobs1.png" height="250px" width="400px"></div>
-            </div>
-        </div>
-
 
         <div class="row">
-            <div class="col-12">
 
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -88,61 +66,83 @@
                         <a class="nav-link" href="quemsomos.html">Quem somos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Cadastro
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
-                          <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="contato.html">Contato</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
-          </form>
-      </div>
-  </nav>
-</div>
-</div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
+                            <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="contato.html">Contato</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
+                </form>
+            </div>
 
-
-
-<!--
-<div id="menu1">
-    <ul class="menu">
-        <li><a href="#"> HOME </a></li>
-        <li><a href="quemsomos.html"> QUEM SOMOS ? </a></li>
-        <li><a href="#"> VAGAS </a></li>
-        <li><a href="#"> CADASTRO </a></li>
-        <li><a href="#"> CONTATO </a></li>
-    </ul>
-</div>-->
-
-<br>
-<br>
-<br>
-<div class="row">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4"> 
-        <p class="centro"><img src="imagens/valeverde.jpg" class="img-fluid rounded-circle" width="300px" height="100px"> <br></p> <p class="img"> Usina Vale Verde contrata 10 Jovens Aprendizes do IFRN - Campus Canguaretama, matéria completa <a href="http://portal.ifrn.edu.br/campus/canguaretama/noticias/usina-vale-verde-contrata-10-jovens-aprendizes-do-ifrn-campus-canguaretama"> aqui </a> </p> 
+        </nav>
+        
     </div>
+    <div class="row">
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4"> 
-        <p class="centro"> <img src="imagens/aprendiz.png" class="img-fluid rounded-circle" width="400px" height="300px"> <br> </p> <p class="img"> <br> <br> Você conhece a lei da aprendizagem? <br> <a href="http://site.aprendizlegal.org.br/lei"> Clique aqui e conheça </a> 
-    </p> 
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4"> 
-        <p class="centro"> <img src="imagens/participar.png" class="img-fluid rounded-circle" width="400px" height="300px"> <br> </p> <p class="img"> Saiba como participar  <a href="http://site.aprendizlegal.org.br/como-participar-aprendiz"> aqui </a> </p> </div>
+        <div class="img"> <img src="imagens/J.png" height="350px" width="100%"></div>
+
     </div>
 
 
-</div>
+    <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide centro" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
 
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <img class="d-block w-100 im" src="imagens/bla.png" alt="First slide" width="400px" height="450px">
+                    <div class="carousel-caption d-none d-md-block est">
+                        <h5> bla bla</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <img class="d-block w-100 im" src="imagens/aprendiz.png" alt="Second slide" width="400px" height="450px">
+                    <div class="carousel-caption d-none d-md-block est">
+                        <h5> bldsfga bla</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <img class="d-block w-100 im" src="imagens/participar.png" alt="Third slide" width="400px" height="450px" >
+                    <div class="carousel-caption d-none d-md-block est">
+                        <h5> bla bla</h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>

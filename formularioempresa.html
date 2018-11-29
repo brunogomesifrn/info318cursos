@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title> JUNIOR JOBS </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <style type="text/css">
 
-    <style>
 
-
-    *{ margin: 0;padding: 0; }
     body{ font-family: "trebuchet ms"; }
     a{ text-decoration: none; color: #000; }
     a:hover{ }
 
-    #menu1 {
-        width: 1597px;
-        height: 100px;
-        line-height: 80px; /* centraliza na vertical */
-        background-color: #f1f1f1;
-        border: 1px dashed #ccc;
-        margin: 0 auto;
+    .est{
+        background: rgba(20, 20, 20, 0.7);
+        border-radius: 10px;   
     }
-    ul.menu{
-        text-align: center; /* centraliza na horizontal */
-    }
-    ul.menu li{
-        display: inline-block; /* centraliza na horizontal */
-        margin: 10px;
-        width: 200px;
-        height: 200px;
-    }
-    ul.menu li a{
-        background-color: #3d7bb3;
-        border-radius: 6px;
-        padding: 6px 10px;
-        color: #fff;
-    }
-    ul.menu li a:hover{
-        background-color: #8BBADC;
+    .im{
+        width: 100%;
+        height: 600px;
     }
 
     .img {
         text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black
     }
 
-    .body {
-        background: black;
-    }
 
     .img {
         text-align: center;
     }
 
     .centro {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%
+    }
+    body{
+        background-color: #585858;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    
+  .centro {
         text-align: center;
     }
 
@@ -65,25 +56,19 @@
     .principal {
         border-style: solid;
     }
+
 </style>
 </head>
+
+
 <body>
-
- <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="img"> <img src="imagens/JuniorJobs1.png" height="250px" width="400px"></div>
-            </div>
-        </div>
-
+    <div class="container-fluid">
 
         <div class="row">
-            <div class="col-12">
 
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -96,30 +81,38 @@
                         <a class="nav-link" href="quemsomos.html">Quem somos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Cadastro
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
-                          <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="contato.html">Contato</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
-          </form>
-      </div>
-  </nav>
-</div>
-</div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
+                            <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="contato.html">Contato</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="empresasparceiras.html"> Empresas Parceiras </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
+                </form>
+            </div>
 
-<form action="" method="">
+        </nav>
+        
+    </div>
+    <div class="row">
+
+        <div class="img"> <img src="imagens/azul.png" height="350px" width="100%"></div>
+
+    </div>
+
+
+    <form action="" method="">
     
 <h1 class="titulo1"> Seja bem-vindo a página de cadastro! <br> Aqui você poderá se cadastrar para tornar-se uma empresa parceira do IFRN. </h1>
 </form>
@@ -165,7 +158,6 @@
 
 
 </div>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>
@@ -177,5 +169,6 @@ crossorigin="anonymous"></script>
 src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 crossorigin="anonymous"></script>
+
 </body>
 </html>

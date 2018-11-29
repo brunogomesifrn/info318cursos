@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Contato </title>
+    <title> JUNIOR JOBS </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <style type="text/css">
 
-    <style>
 
-
-    *{ margin: 0;padding: 0; }
     body{ font-family: "trebuchet ms"; }
     a{ text-decoration: none; color: #000; }
     a:hover{ }
 
-    #menu1 {
-        width: 1597px;
-        height: 100px;
-        line-height: 80px; /* centraliza na vertical */
-        background-color: #f1f1f1;
-        border: 1px dashed #ccc;
-        margin: 0 auto;
+    .est{
+        background: rgba(20, 20, 20, 0.7);
+        border-radius: 10px;   
     }
-    ul.menu{
-        text-align: center; /* centraliza na horizontal */
-    }
-    ul.menu li{
-        display: inline-block; /* centraliza na horizontal */
-        margin: 10px;
-        width: 200px;
-        height: 200px;
-    }
-    ul.menu li a{
-        background-color: #3d7bb3;
-        border-radius: 6px;
-        padding: 6px 10px;
-        color: #fff;
-    }
-    ul.menu li a:hover{
-        background-color: #8BBADC;
+    .im{
+        width: 100%;
+        height: 600px;
     }
 
     .img {
         text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black
     }
 
-    .body {
-        background: black;
-        background-image: url("/imagens/background1.jpg");
-    }
 
     .img {
         text-align: center;
-        
     }
 
     .centro {
         text-align: center;
+        margin: 0 auto;
+        width: 50%
     }
-
-
-
+    body{
+        background-color: #585858;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
 </style>
 </head>
 
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="img"> <img src="imagens/JuniorJobs1.png"></div>
-            </div>
-        </div>
-
 
         <div class="row">
-            <div class="col-12">
 
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -93,61 +66,52 @@
                         <a class="nav-link" href="quemsomos.html">Quem somos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Cadastro
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
-                          <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="contato.html">Contato</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-      </div>
-  </nav>
-</div>
-</div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastro</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="formularioaluno.html">Alunos</a>
+                            <a class="dropdown-item" href="formularioempresa.html">Empresas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="contato.html">Contato</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"> Vagas disponíveis </a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="empresasparceiras.html"> Empresas Parceiras </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
+                </form>
+            </div>
+
+        </nav>
+        
+    </div>
+    <div class="row">
+
+        <div class="img"> <img src="imagens/azul.png" height="350px" width="100%"></div>
+
+    </div>
 
 
-
-<!--
-<div id="menu1">
-    <ul class="menu">
-        <li><a href="#"> HOME </a></li>
-        <li><a href="quemsomos.html"> QUEM SOMOS ? </a></li>
-        <li><a href="#"> VAGAS </a></li>
-        <li><a href="#"> CADASTRO </a></li>
-        <li><a href="#"> CONTATO </a></li>
-    </ul>
-</div>-->
-
-<br>
-<br>
-<br>
-<div class="row" id="fundo">
+    <div class="row" id="fundo">
 
 
     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"> 
-        <p class="centro"><img src="imagens/if.png" class="img-fluid rounded-circle" width="300px" height="100px"> <br></p> <p class="img"> Contactar o Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus canguaretama<br>Telefone: (84) 4005-4114<br> Email: gestur.cang@ifrn.edu.br<br> <a href="http://portal.ifrn.edu.br/campus/canguaretama/cursos2/gestao-de-turismo/contato"target="_blank"> Para outros meios de comunicação com s Instituição, clique aqui! </a> </p> 
+        <p class="centro"> <br> <img src="imagens/if.png" class="img-fluid rounded-circle" width="300px" height="100px"> <br></p> <p class="img"> 
+            <br> Contactar o Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus canguaretama<br>Telefone: (84) 4005-4114<br> Email: gestur.cang@ifrn.edu.br<br> <a href="http://portal.ifrn.edu.br/campus/canguaretama/cursos2/gestao-de-turismo/contato"target="_blank"> Para outros meios de comunicação com a Instituição, clique aqui! </a> </p> 
     </div>
 
     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"> 
-        <p class="centro"> <img src="imagens/extensao.jpg" class="img-fluid rounded-circle" width="200px" height="100px"> <br> </p> <p class="img"> <br> <br> Coordenador de Extensão do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Canguaretama.<br> Email para contato: helber.silva@ifrn.edu.br<br><a href="http://portal.ifrn.edu.br/campus/canguaretama/extensao-1/principal"target="_blank"> Acesse sua página do IFRN aqui! </a> 
+        <p class="centro"> <br> <img src="imagens/extensao.jpg" class="img-fluid rounded-circle" width="200px" height="200px"> <br> </p> <p class="img"> <br> <br> Coordenador de Extensão do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Canguaretama.<br> Email para contato: helber.silva@ifrn.edu.br<br><a href="http://portal.ifrn.edu.br/campus/canguaretama/extensao-1/principal"target="_blank"> Acesse sua página do IFRN aqui!  </a> 
     </p> 
     </div>
     </div>
 
-
 </div>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>

@@ -37,8 +37,8 @@
         margin: 0 auto;
         width: 50%
     }
-    body{
-        background-color: #585858;
+    .body{
+        background-color: #87CEFF;
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
@@ -51,12 +51,14 @@
     .principal {
         border-style: solid;
     }
+
 </style>
 </head>
 
 
 <body>
-    <div class="container-fluid">
+
+    <div class="container-fluid body">
 
         <div class="row">
 
@@ -111,33 +113,32 @@
     
 <h1 class="titulo1"> Seja bem-vindo a página de cadastro! <br> Aqui você poderá se cadastrar para concorrer às vagas de empregos ofertados. </h1>
 </form>
-<div class="principal">
-    <br>
-<p> Nome:
-<input type="text" name="nome" autofocus required>
-</p>
-
-<p>Data de nascimento:
-<input type="date" name="data_nascimento" required />
-</p>
-
-<p>E-mail:
-<input type="email" name="email" required />
-</p>
-
-<p>CPF:
-<input type="text" name="cpf" maxlength="11" required />
-</p>
-
-<p>Telefone:
-<input type="text" name="telefone" required />
-</p>
-
-<p>Matrícula:
-<input type="text" name="matricula" required />
-</p>
-
-<p>Turma: 
+<form>
+  <div class="form-group">
+    <label for="name">Nome do Aluno</label>
+    <input type="name" name="nome" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Seu nome">
+  </div>
+  <div class="form-group">
+  	<label for="email">E-mail do Aluno</label>
+  	<input type="email" name="email" class="form-control" id="emailexemplo" aria-describedby="email" placeholder="Seu email">
+  </div>
+   <div class="form-group">
+  	<label for="date">Data de Nascimento</label>
+  	<input type="date" name="data_nascimento" class="form-control" id="nascimento" aria-describedby="data_nascimento" placeholder="Sua data de nascimento">
+  </div>
+   <div class="form-group">
+  	<label for="cpf">CPF do Aluno</label>
+  	<input type="email" name="cpf" class="form-control" id="cpfexemplo" aria-describedby="cpf" placeholder="Seu CPF">
+  </div>
+   <div class="form-group">
+  	<label for="text">Telefone do Aluno</label>
+  	<input type="text" name="telefone" class="form-control" id="telegoneexemplo" aria-describedby="telefone" placeholder="Seu Telefone">
+  </div>
+   <div class="form-group">
+  	<label for="text">Matricula do Aluno</label>
+  	<input type="text" name="matricula" class="form-control" id="matriculaexemplo" aria-describedby="matricula" placeholder="Seu email">
+  </div>
+ <p>Turma: 
 <select name="selecao">
 <option value="informatica"> Informática </option>
 <option value="eletromecanica"> Eletromecânica </option>
@@ -146,25 +147,17 @@
 <option value="mecanica"> Mecânica </option>
 <option value="ledoc"> LEDOC </option>
 </select>
+   <div class="form-group">
+  	<label for="text">Vaga em que deseja concorrer:</label>
+  	<input type="text" name="vaga" class="form-control" id="vagaexemplo" aria-describedby="vaga" placeholder="Escolha a vaga que deseja concorrer!">
+  </div>
+     <div class="form-group">
+  	<label for="text">Coloque o link do seu Currículo Lattes.</label>
+  	<input type="text" name="lattes" class="form-control" id="lattesexemplo" aria-describedby="lattes" placeholder="Link do seu lattes">
+  </div>
+  <button class="img" type="submit" class="btn btn-primary">Enviar</button>
+</form>
 
-<p> Vaga que deseja concorrer:
-
-<input type="text" name="nome" required>    
-</p>
-
-<p> Coloque o link do seu currículo lattes:
-<input type="text" name="nome" required>    
-</p>
-
-
-<p>
-<input type="submit" value="Enviar dados" />
-</p>
-
-</div>
-
-
-</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>

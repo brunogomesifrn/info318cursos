@@ -37,10 +37,8 @@
         margin: 0 auto;
         width: 50%
     }
-    body{
-        background-color: #585858;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+    .body{
+        background-color: #87CEFF;
     }
 
     
@@ -116,30 +114,28 @@
     
 <h1 class="titulo1"> Seja bem-vindo a página de cadastro! <br> Aqui você poderá se cadastrar para tornar-se uma empresa parceira do IFRN. </h1>
 </form>
-
-<div class="principal">
-    <br>
-<p> Nome da empresa:
-<input type="text" name="nome" autofocus required>
-</p>
-
-<p>E-mail:
-<input type="email" name="email" required />
-</p>
-
-<p>CNPJ:
-<input type="text" name="cnpj" maxlength="11" required />
-</p>
-
-<p>Telefone:
-<input type="text" name="telefone" required />
-</p>
-
-<p>Endereço:
-<input type="text" name="endereço" required />
-</p>
-
-<p> Deseja ofertar vagas de emprego para que área? <br />
+<form>
+<div class="form-group">
+    <label for="name">Nome da Empresa</label>
+    <input type="name" name="nome" autofocus required class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Nome da sua empresa">
+  </div>
+  <div class="form-group">
+    <label for="email">Email da Empresa</label>
+    <input type="email" name="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailhelp" placeholder="E-mail da sua empresa">
+  </div>
+  <div class="form-group">
+    <label for="text">CNPJ</label>
+    <input type="text" name="cnpj" required class="form-control" id="exampleInputcnpj1" aria-describedby="cnpjHelp" placeholder="CNPJ da sua empresa">
+  </div>
+    <div class="form-group">
+    <label for="text">Telefone:</label>
+    <input type="text" name="telefone" required class="form-control" id="exampleInputtelefone1" aria-describedby="telefoneHelp" placeholder="Telefone da sua empresa">
+  </div>
+    <div class="form-group">
+    <label for="text">Endereço da Empresa</label>
+    <input type="text" name="endereco" required class="form-control" id="exampleInputendereco1" aria-describedby="enderecoHelp" placeholder="Endereço da sua empresa">
+  </div>
+  <p> Deseja ofertar vagas de emprego para que área? <br />
 <input type="checkbox" name="area" value="informatica"/> Informática
 <br />
 <input type="checkbox" name="area" value="eletromecanica" /> Eletromecânica <br />
@@ -147,15 +143,8 @@
 <input type="checkbox" name="area" value="mecanica" /> Mecânica <br />
 <input type="checkbox" name="area" value="gestur" /> Gestão de Turismo <br />
 <input type="checkbox" name="area" value="ledoc" /> LEDOC </p>
-
-
-
-<p>
-<input type="submit" value="Enviar dados" />
-</p>
-
-</div>
-
+<button class="img" type="submit" class="btn btn-primary">Enviar</button>
+  </form>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
